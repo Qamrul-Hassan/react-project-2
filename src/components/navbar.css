@@ -1,0 +1,144 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: .4rem 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    text-decoration: none;
+}
+
+.brand-text {
+    color: #FF3E41;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.navbar-collapse {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.navbar-collapse.open {
+    display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
+    padding: 0.8rem 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #FF3E41;
+}
+
+.active {
+    color: #FF3E41;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f8f8;
+    color: #FF3E41;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    color: #FF3E41;
+    font-weight: bold;
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: inline-block;
+    }
+
+    .navbar-collapse.open .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      
+    }
+    .navbar-toggler {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.navbar-toggler.show { 
+    transform: rotate(90deg); 
+    opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block; 
+    }
+}
+
+/* Navbar Menu Transition (Optional) */
+.navbar-collapse {
+    transition: max-height 0.4s ease; /* Slows down the expansion/collapse */
+    overflow: hidden;
+}
+}
