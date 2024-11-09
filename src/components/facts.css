@@ -41,12 +41,13 @@
 .contact-info {
   display: flex;
   align-items: center;
+  font-size: 1.5rem;
 }
 
 .contact-icon {
   font-size: 3rem;
   color: #fff;
-  background-color: #007bff;
+  background-color: #dc3545;
   padding: 15px;
   border-radius: 50%;
   margin-right: 15px;
@@ -58,7 +59,7 @@
 }
 
 .contact-number {
-  color: #007bff;
+  color: #dc3545;
   font-size: 1.5rem;
   font-weight: bold;
   margin: 5px 0 0;

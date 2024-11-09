@@ -1,58 +1,60 @@
 
+import React from 'react';
+import ServiceReuse from './ServiceReuse';
+import './ServiceRe.css';
+import '../assets/image/service-1.jpg';
+import '../assets/image/service-2.jpg';
+import '../assets/image/service-3.jpg';
+import '../assets/image/service-4.jpg';
+import '../assets/image/service-5.jpg';
+import '../assets/image/service-6.jpg';
 
-import ServiceCard from "./ServiceCard";
-
-function Services() {
-  const services = [
+const Service = () => {
+  const serviceData = [
     {
-      title: "Air Freight",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
-      image: "../assets/image/air-freight.jpg"
+      image: '../assets/image/service-1.jpg',
+      title: 'Air Freight',
+      description: 'Reliable air transport solutions.',
     },
     {
-      title: "Ocean Freight",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
-      image: "../assets/image/ocean-freight.jpg"
+      image: '../assets/image/service-2.jpg',
+      title: 'Ocean Freight',
+      description: 'Efficient ocean transport services.',
     },
     {
-      title: "Road Freight",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
-      image: "../assets/image/road-freight.jpg"
+      image: '../assets/image/service-3.jpg',
+      title: 'Road Freight',
+      description: 'Fast and secure road transport.',
     },
     {
-      title: "Train Freight",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
-      image: "../assets/image/train-freight.jpg"
+      image: '../assets/image/service-4.jpg',
+      title: 'Train Freight',
+      description: 'Eco-friendly rail solutions.',
     },
     {
-      title: "Customs Clearance",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
-      image: "../assets/image/customs-clearance.jpg"
+      image: '../assets/image/service-5.jpg',
+      title: 'Customs Clearance',
+      description: 'Smooth customs processing.',
     },
     {
-      title: "Warehouse Solutions",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
-      image: "../assets/image/warehouse-solutions.jpg"
-    }
+      image: '../assets/image/service-6.jpg',
+      title: 'Warehouse Solutions',
+      description: 'Secure storage services.',
+    },
   ];
 
   return (
-    <section className="services-section">
-      <h3 className="section-title">OUR SERVICES</h3>
-      <h2 className="section-subtitle">Explore Our Services</h2>
-
-      <div className="card-container">
-        {services.map((service, index) => (
-          <ServiceCard
-            key={index}
-            title={service.title}
-            description={service.description}
-            image={service.image}
-          />
-        ))}
-      </div>
-    </section>
+    <div className="service-container">
+      {serviceData.map((service, index) => (
+        <ServiceReuse
+          key={index}
+          image={service.image}
+          title={service.title}
+          description={service.description}
+        />
+      ))}
+    </div>
   );
-}
+};
 
-export default Services;
+export default Service;
