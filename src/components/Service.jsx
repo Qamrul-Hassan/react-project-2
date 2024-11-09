@@ -1,43 +1,42 @@
-
 import React from 'react';
 import ServiceReuse from './ServiceReuse';
-import './ServiceRe.css';
-import '../assets/image/service-1.jpg';
-import '../assets/image/service-2.jpg';
-import '../assets/image/service-3.jpg';
-import '../assets/image/service-4.jpg';
-import '../assets/image/service-5.jpg';
-import '../assets/image/service-6.jpg';
+import './ServiceReuse.css';
+import service1 from '../assets/image/service-1.jpg';
+import service2 from '../assets/image/service-2.jpg';
+import service3 from '../assets/image/service-3.jpg';
+import service4 from '../assets/image/service-4.jpg';
+import service5 from '../assets/image/service-5.jpg';
+import service6 from '../assets/image/service-6.jpg';
 
 const Service = () => {
   const serviceData = [
     {
-      image: '../assets/image/service-1.jpg',
+      image: service1,
       title: 'Air Freight',
       description: 'Reliable air transport solutions.',
     },
     {
-      image: '../assets/image/service-2.jpg',
+      image: service2,
       title: 'Ocean Freight',
       description: 'Efficient ocean transport services.',
     },
     {
-      image: '../assets/image/service-3.jpg',
+      image: service3,
       title: 'Road Freight',
       description: 'Fast and secure road transport.',
     },
     {
-      image: '../assets/image/service-4.jpg',
+      image: service4,
       title: 'Train Freight',
       description: 'Eco-friendly rail solutions.',
     },
     {
-      image: '../assets/image/service-5.jpg',
+      image: service5,
       title: 'Customs Clearance',
       description: 'Smooth customs processing.',
     },
     {
-      image: '../assets/image/service-6.jpg',
+      image: service6,
       title: 'Warehouse Solutions',
       description: 'Secure storage services.',
     },

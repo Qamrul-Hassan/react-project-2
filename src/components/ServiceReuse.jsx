@@ -1,15 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Service.css';
-
-
-
-ServiceReuse.propTypes = {
-  imageSrc: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-};
-
+import './ServiceReuse.css';
 
 const ServiceReuse = ({ image, title, description }) => {
   return (
@@ -22,5 +13,10 @@ const ServiceReuse = ({ image, title, description }) => {
   );
 };
 
+ServiceReuse.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 export default ServiceReuse;

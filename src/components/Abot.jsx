@@ -1,6 +1,7 @@
 
-import Iamge from '../assets/image/about.jpg'; 
+import '../assets/image/about.jpg'; 
 import './about.css'; 
+
 
 const Abot = () => {
   return (
