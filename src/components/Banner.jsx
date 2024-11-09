@@ -1,5 +1,4 @@
-import React from "react";
-import bannerImage from "../assets/image/carousel-1.jpg"; // Adjust path if needed
+;
 import "./banner.css";
 
 const Banner = () => {

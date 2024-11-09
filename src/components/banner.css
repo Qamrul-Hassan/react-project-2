@@ -1,4 +1,4 @@
-/* Updated Banner Styling with Dark Overlay */
+
 .banner {
     position: relative;
     width: 100%;
@@ -7,9 +7,10 @@
     align-items: center;
     background: url('../assets/image/carousel-1.jpg') no-repeat center center/cover;
     color: white;
+    
 }
 
-/* Dark Overlay */
+
 .banner::before {
     content: "";
     position: absolute;
@@ -17,14 +18,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Adjust opacity for brightness */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
 .banner-content {
     position: relative;
-    z-index: 2; /* Ensures content is above the overlay */
-    margin-left: 15%; /* Adjust to match the left padding in the image */
+    z-index: 2; 
+    margin-left: 15%; 
     max-width: 50%;
     color: white;
 }
@@ -45,14 +46,14 @@
 }
 
 .banner-title .highlight {
-    color: #FF3E41; /* Highlight color */
+    color: #FF3E41; 
 }
 
 .banner-description {
     font-size: 1.5rem;
     margin-bottom: 2rem;
     line-height: 6rem;
-    color: rgba(255, 255, 255, 0.85);
+    color: white;
 }
 
 .btn {

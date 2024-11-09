@@ -1,144 +1,134 @@
+:root {
+  --primary: #FF3E41;
+  --secondary: #51CFED;
+  --light: #F8F2F0;
+  --dark: #060315;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    padding: .4rem 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-top: 5px solid var(--primary);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
 }
 
 .navbar-brand {
-    text-decoration: none;
+  background-color: var(--primary);
+  padding: 0.5rem 1.5rem;
+  color: white;
+  text-decoration: none;
 }
 
 .brand-text {
-    color: #FF3E41;
-    font-size: 3rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .navbar-toggler {
-    display: none;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .navbar-collapse {
-    display: flex;
-    align-items: center;
-    z-index: 10;
-}
-
-.navbar-collapse.open {
-    display: block;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-nav {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  list-style: none;
+  margin-right: auto;
 }
 
 .nav-item {
-    text-decoration: none;
-    color: #333;
-    padding: 0.8rem 1.5rem;
-    transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
 }
 
+.nav-item.active,
 .nav-item:hover {
-    color: #FF3E41;
+  color: var(--primary);
 }
 
-.active {
-    color: #FF3E41;
+.dropdown {
+  position: relative;
 }
 
-.dropdown-toggle {
-    cursor: pointer;
+.dropdown-toggle::after {
+  content: " ▼";
 }
 
 .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    margin-top: 1rem;
-    border-radius: 4px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
 }
 
 .dropdown-menu.show {
-    display: block;
+  display: block;
 }
 
-.dropdown-item {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: #333;
-    text-decoration: none;
+.dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--dark);
+  display: block;
 }
 
-.dropdown-item:hover {
-    background-color: #f8f8f8;
-    color: #FF3E41;
+.dropdown-menu .dropdown-item:hover {
+  background-color: var(--light);
+  color: var(--primary);
 }
 
 .contact-info {
-    display: flex;
-    align-items: center;
-    color: #FF3E41;
-    font-weight: bold;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
 }
 
 .icon {
-    margin-right: 0.5rem;
+  color: var(--primary);
+  margin-right: 0.5rem;
 }
 
+/* Mobile View */
 @media (max-width: 768px) {
-    .navbar-nav {
-        display: none;
-    }
-
-    .navbar-toggler {
-        display: inline-block;
-    }
-
-    .navbar-collapse.open .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-      
-    }
-    .navbar-toggler {
+  .navbar-toggler {
+    display: block;
+  }
+  
+  .navbar-collapse {
     display: none;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.3s ease, opacity 0.3s ease; 
-}
+    flex-direction: column;
+  }
 
-.navbar-toggler.show { 
-    transform: rotate(90deg); 
-    opacity: 1;
-}
-
-
-@media (max-width: 768px) {
-    .navbar-toggler {
-        display: block; 
-    }
-}
-
-/* Navbar Menu Transition (Optional) */
-.navbar-collapse {
-    transition: max-height 0.4s ease; /* Slows down the expansion/collapse */
-    overflow: hidden;
-}
+  .navbar-collapse.open {
+    display: flex;
+  }
 }
