@@ -1,4 +1,4 @@
-/* Container */
+
 .feature-container {
   display: flex;
   justify-content: center;
@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-/* Main content area */
+
 .feature-content {
   display: flex;
   max-width: 1200px;
@@ -14,7 +14,7 @@
   gap: 30px;
 }
 
-/* Feature text styling */
+
 .feature-text {
   flex: 1;
 }
@@ -29,7 +29,7 @@
   margin-bottom: 30px;
 }
 
-/* Feature items */
+
 .feature-item {
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@
   margin-bottom: 5px;
 }
 
-/* Feature image styling */
+
 .feature-image {
   flex: 1;
   position: relative;
@@ -64,5 +64,5 @@
   object-fit: cover;
   position: absolute;
   top: 0;
-  left: 0;
+  left:0;
 }
