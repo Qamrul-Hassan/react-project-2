@@ -1,0 +1,104 @@
+.quote-container {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.quote-content {
+    display: flex;
+    gap: 20px;
+}
+
+.quote-left {
+    max-width: 50%;
+}
+
+.quote-subtitle {
+    color: #5a5a5a;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: rgb(40, 109, 214);
+}
+
+.quote-title {
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+.quote-text {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.quote-contact {
+    display: flex;
+    align-items: center;
+}
+
+.quote-icon {
+    font-size: 3em;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.quote-contact-info h6 {
+    font-size: 25px;
+    margin: 0;
+    color: #333;
+}
+
+.quote-phone {
+    font-size: 35px;
+    color: #e74c3c;
+    margin: 0;
+}
+
+.quote-right {
+    max-width: 55%;
+    background-color: #f8f8f8;
+    padding: 60px;
+    border-radius: 5px;
+    background-color: #f0eeee;
+}
+
+.quote-form-container {
+    text-align: left;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    
+}
+
+.form-control {
+    flex: 1;
+    padding: 20px 75px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.form-submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-submit-btn:hover {
+    background-color: #d62c1a;
+}
+

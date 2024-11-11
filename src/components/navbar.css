@@ -1,0 +1,134 @@
+:root {
+  --primary: #FF3E41;
+  --secondary: #51CFED;
+  --light: #F8F2F0;
+  --dark: #060315;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-top: 5px solid var(--primary);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+}
+
+.navbar-brand {
+  background-color: var(--primary);
+  padding: 0.5rem 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.brand-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin-right: auto;
+}
+
+.nav-item {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.nav-item.active,
+.nav-item:hover {
+  color: var(--primary);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  content: " ▼";
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--dark);
+  display: block;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: var(--light);
+  color: var(--primary);
+}
+
+.contact-info {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: var(--primary);
+  margin-right: 0.5rem;
+}
+
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+  
+  .navbar-collapse {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar-collapse.open {
+    display: flex;
+  }
+}

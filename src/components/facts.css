@@ -1,0 +1,109 @@
+
+
+.facts-section {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.facts-container {
+  display: flex;
+  max-width: 1500px;
+  width: 100%;
+  gap: 40px;
+}
+
+.facts-text {
+  flex: 1;
+}
+
+.facts-subtitle {
+  color: #007bff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.facts-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.facts-description {
+  font-size: 1.3rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.contact-icon {
+  font-size: 3rem;
+  color: #fff;
+  background-color: #dc3545;
+  padding: 15px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.contact-details h6 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.contact-number {
+  color: #dc3545;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 5px 0 0;
+}
+
+.facts-stats {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat-item {
+  flex: 1 1 calc(50% - 10px);
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.stat-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.stat-label {
+  margin: 0;
+}
+
+
+.bg-primary {
+  background-color: #dc3545;
+}
+
+.bg-secondary {
+  background-color: #17a2b8;
+}
+
+.bg-success {
+  background-color: #036319;
+}

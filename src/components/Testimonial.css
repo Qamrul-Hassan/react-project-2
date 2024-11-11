@@ -1,0 +1,22 @@
+.testimonial-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .testimonial-text {
+    padding: 20px;
+  }
+  
+  .img-fluid {
+    border-radius: 5px;
+    
+  }
+  
+  
+  .fst-italic {
+    font-style: italic;
+  }
+  
