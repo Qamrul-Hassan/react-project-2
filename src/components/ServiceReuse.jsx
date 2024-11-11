@@ -1,21 +1,25 @@
-import React from 'react';
+
 import PropTypes from 'prop-types';
 import './ServiceReuse.css';
 
-const ServiceReuse = ({ image, title, description }) => {
+const ServiceReuse = (props) => {
   return (
     <div className="service-card">
-      <img src={image} alt={title} className="service-image" />
-      <h3 className="service-title">{title}</h3>
-      <p className="service-description">{description}</p>
-      <button className="service-button">Learn More</button>
+      <img src={props.image} alt={props.heading} className="service-image" />
+      <div className="service-content">
+        <h4 className="service-heading">{props.heading}</h4>
+        <p className="service-description">{props.description}</p>
+        <button className="service-button">
+          <span className="service-button-icon">&rarr;</span> 
+        </button>
+      </div>
     </div>
   );
 };
 
 ServiceReuse.propTypes = {
   image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  heading: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };
 

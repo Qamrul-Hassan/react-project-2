@@ -1,4 +1,3 @@
-
 import './facts.css';
 
 const Facts = () => {
@@ -41,4 +40,4 @@ const Facts = () => {
   );
 };
 
-export default Facts;
+export default Facts;

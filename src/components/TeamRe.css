@@ -1,0 +1,31 @@
+.container-xxl {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    margin-bottom: 40px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .display-5 {
+    font-size: 2.5rem;
+  }
+  
+  .mb-5 {
+    margin-bottom: 3rem;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 15px;
+  }
+  

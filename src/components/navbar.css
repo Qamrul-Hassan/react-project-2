@@ -117,7 +117,7 @@ body {
   margin-right: 0.5rem;
 }
 
-/* Mobile View */
+
 @media (max-width: 768px) {
   .navbar-toggler {
     display: block;
@@ -129,6 +129,6 @@ body {
   }
 
   .navbar-collapse.open {
-    display: flex;
-  }
+    display: flex;
+  }
 }

@@ -1,0 +1,24 @@
+.team-container {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .team-subheading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #007bff; /* Adjust the color to match your theme */
+    margin-bottom: 0.5rem;
+  }
+  
+  .team-heading {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  

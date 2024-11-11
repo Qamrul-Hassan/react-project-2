@@ -1,6 +1,7 @@
 import React from 'react';
 import ServiceReuse from './ServiceReuse';
 import './ServiceReuse.css';
+import './Service.css'; 
 import service1 from '../assets/image/service-1.jpg';
 import service2 from '../assets/image/service-2.jpg';
 import service3 from '../assets/image/service-3.jpg';
@@ -43,15 +44,24 @@ const Service = () => {
   ];
 
   return (
-    <div className="service-container">
-      {serviceData.map((service, index) => (
-        <ServiceReuse
-          key={index}
-          image={service.image}
-          title={service.title}
-          description={service.description}
-        />
-      ))}
+    <div className="service-section">
+     
+      <div className="service-heading-section">
+        <p className="service-heading-small">OUR SERVICES</p>
+        <h2 className="service-heading-main">Explore Our Services</h2>
+      </div>
+
+      
+      <div className="service-container">
+        {serviceData.map((service, index) => (
+          <ServiceReuse
+            key={index}
+            image={service.image}
+            title={service.title}
+            description={service.description}
+          />
+        ))}
+      </div>
     </div>
   );
 };

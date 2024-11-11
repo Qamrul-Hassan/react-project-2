@@ -1,0 +1,58 @@
+.price-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  width: 20%;
+}
+
+.price-header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.price-title {
+  color: #ff3300;
+  margin-bottom: 10px;
+}
+
+.price-amount {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.price-currency {
+  font-size: 1.7rem;
+  vertical-align: top;
+}
+
+.price-per-month {
+  font-size: 2rem;
+  vertical-align: bottom;
+}
+
+.price-features {
+  padding: 20px;
+}
+
+.price-feature {
+  margin-bottom: 10px;
+}
+
+.btn-slide {
+  display: inline-block;
+  margin-top: 20px;
+  color: #0e0d0d;
+  text-decoration: none;
+  background-color: #ff3300;
+  padding: 15px 20px;
+  border-radius: 0px 50px;
+  bo
+}
+
+.btn-slide i {
+  margin-right: 5px;
+}
+
